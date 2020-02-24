@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Class Sample</title>
+    <script>
+      class Square {
+        constructor(height, width) {
+          this.height = height;
+          this.width = width;
+        }
+
+        get area() {
+          return this.calcArea();
+        }
+
+        calcArea() {
+          return this.height * this.width;
+        }
+      }
+
+      var foo1 = new Square(100, 20);
+      var foo2 = new Square(1000, 200);
+
+      console.log(foo1.area);
+      console.log(foo2.area);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
